@@ -1,0 +1,33 @@
+
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
+
+Adafruit_PWMServoDriver pwm1 = Adafruit_PWMServoDriver(0x40);
+//Adafruit_PWMServoDriver pwm2 = Adafruit_PWMServoDriver(0x41);
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println("16 channel PWM test!");
+
+  pwm1.begin();
+  pwm1.setPWMFreq(1600);  // This is the maximum PWM frequency
+
+  //pwm2.begin();
+  //pwm2.setPWMFreq(1600);  // This is the maximum PWM frequency
+}
+
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+pulselength = map(degrees, 0, 180, SERVOMIN, SERVOMAX);
+
+
+}
